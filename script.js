@@ -690,7 +690,7 @@ function StartCalculation() {
                       let disting=[0];
                       Answers_Filterer(the_x_array[the_x_store_indexes[i][k]],m,the_y_array[the_y_store_indexes[n][r]],disting);
                       if (disting[0]==1){
-                        console.log(`nigro is:`,the_x_array[the_x_store_indexes[i][k]],symbols[m],the_y_array[the_y_store_indexes[n][r]]);
+                        console.log(`repeating is:`,the_x_array[the_x_store_indexes[i][k]],symbols[m],the_y_array[the_y_store_indexes[n][r]]);
                         continue;
                       }
                       let ResFour=operation(second_4_1_array[the_x_store_indexes[i][k]], second_4_2_array[the_y_store_indexes[n][r]]);
