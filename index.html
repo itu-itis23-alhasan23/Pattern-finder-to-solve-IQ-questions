@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+        <link rel="stylesheet" href="style.css">
+        <title>the sigma </title>
+    </head>
+
+    <body>
+        
+        <main>
+            <div class="container">
+                <div class="FirstSen">
+                    <span id="IQword">IQ  </span>
+                    <span id="Patternsword">Patterns</span>
+                </div>
+                <div class="SecondSen">
+                    <span id="Solverword">SOLVER</span>
+                </div>
+            </div>
+                        
+        </main>
+        <nav>
+            
+        </nav>
+        <form id="myform">
+            <div class="allitems">
+                <div class="boxcontainer">
+
+                    <div class="FirstRow">
+                        <input type="number" class="numberclass" id="the_1_1" placeholder="X" oninput="handleInput(this)" required>
+                        <span class="Asterisk">*</span>
+                        <input type="number" class="numberclass" id="the_1_2" placeholder="Y" oninput="handleInput(this)" required>
+                        <span class="Equal">=</span>
+                        <input type="number" class="numberclass" id="the_1_3" class="solution" placeholder="Z" oninput="handleInput(this)" required>
+                    </div>
+                    <div class="SecondRow">
+                        <input type="number" class="numberclass" id="the_2_1" oninput="handleInput(this)" required>
+                        <span class="Asterisk">*</span>
+                        <input type="number" class="numberclass" id="the_2_2" oninput="handleInput(this)" required>
+                        <span class="Equal">=</span>
+                        <input type="number" class="numberclass" id="the_2_3" class="solution" oninput="handleInput(this)" required>                
+                    </div>
+                    <div class="ThirdRow">
+                        <input type="number" class="numberclass" id="the_3_1" oninput="handleInput(this)" required>
+                        <span class="Asterisk">*</span>
+                        <input type="number" class="numberclass" id="the_3_2" oninput="handleInput(this)" required> 
+                        <span class="Equal">=</span>
+                        <input type="number" class="numberclass" id="the_3_3" class="solution" oninput="handleInput(this)" required>
+                    </div>
+                    <div class="FourthRow">
+                        <input type="number" class="numberclass" id="the_4_1" oninput="handleInput(this)" required>
+                        <span class="Asterisk">*</span>
+                        <input type="number" class="numberclass" id="the_4_2" oninput="handleInput(this)" required>
+                        <span class="Equal">=</span>
+                        <input type="number" class="numberclass" id="the_4_3" class="solution" oninput="handleInput(this)" placeholder="X" disabled> 
+                    </div>
+                    <div class="answersbar">
+                        <div class="Letters">
+                            <span class="letter">A</span>
+                            <span class="letter">B</span>
+                            <span class="letter">C</span>
+                            <span class="letter">D</span>
+                            <span class="letter">E</span>
+                        </div>
+                        <div class="FifthRow">
+                            <input type="number" id="a" class="answers" oninput="handleInput(this)" required>
+                            <input type="number" id="b" class="answers" oninput="handleInput(this)" required>
+                            <input type="number" id="c" class="answers" oninput="handleInput(this)" required>
+                            <input type="number" id="d" class="answers" oninput="handleInput(this)" required>
+                            <input type="number" id="e" class="answers" oninput="handleInput(this)" required>
+                        </div>
+
+                    </div>
+
+                    <div class="controlscontainer">
+                        <button type="button" onclick="StartCalculation()" class="controls">Start</button>
+                        <button class="controls">reset</button>
+                    </div>
+
+                </div>
+
+        </form>
+        
+        <!-- <--------------------------------> 
+        <script src="script.js"></script>
+    </body>
+</html>
